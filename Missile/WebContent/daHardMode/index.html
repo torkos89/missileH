@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Lunar Lander</title>
+  <style type = "text/css">
+  	#game{background-image: url("starfields_1024_2048_by_tbh_1138-d30dvm7.png");
+  		  background-position: 0px 0px}
+  </style>
+ </head>
+  <body>
+   <form action="" method="get">
+   	Player name:<br>
+   	<input type="text" name="playerName">
+   	<input type="submit" value="Submit">
+   </form>
+   <canvas id="game" width="800" height="500"></canvas>
+   <span>score: <span id="score"></span></span>
+   <canvas id="mini" width="200" height="125"></canvas>
+   <script src="game.js"></script>
+  </body>
+</html>

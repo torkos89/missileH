@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name = "viewport" content = "width=device-width, intial-scale=1">
+  <title>!Lunar Lander</title>
+  <style type = "text/css">
+  	#game{background-image: url("starfields_1024_2048_by_tbh_1138-d30dvm7.png");
+  		  background-position: 0px 0px;
+  		  position: absolute;
+  		  top: 0;
+  		  right: 0;
+  		  bottom: 0;
+  		  left: 0;
+  		  z-index: 1;
+  		  cursor: crosshair;
+  		  }
+  	#mini{position: absolute;
+  		  bottom: 0;
+  		  right: 0;
+  		  z-index: 2;
+  		  border: 1px solid white;
+  		  border-radius: 100px;
+  	}
+  	form{ width: 300px; height: 100px; margin: -50px 0 0 -150px;
+     	position: absolute; top: 50%; left: 50%; z-index: 2;
+     	background-color: white;  	
+  	}
+  </style>
+ </head>
+  <body>
+   <form action="" method="get">
+   	Player name:<br>
+   	<input type="text" name="playerName">
+   	<input type="submit" value="Submit">
+   </form>
+   <canvas id="game" width="800" height="500"></canvas>
+   <span>score: <span id="score"></span></span>
+   <canvas id="mini" width="200" height="200"></canvas>
+   <script src="game.js"></script>
+  </body>
+</html>
